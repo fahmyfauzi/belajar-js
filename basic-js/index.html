@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript</title>
+
+    <style>
+      #wrap {
+        color: white;
+        background-color: black;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap"></div>
+
+    <!-- <script src="main.js"></script> -->
+    <script>
+      var angka1 = 100;
+      var angka2 = 231.13421;
+      var angka3 = 300;
+      //   8. metode angka 2  round() ceil() floor()
+      var round = Math.round(10.645); //bulatkan angka
+      var ceil = Math.ceil(11.145); //bulatkan angka ke atas
+      var floor = Math.floor(13.999); //bulatkan  angka ke baawah
+
+      var x = 10; //range
+      var y = 2; // batas minimal
+      var object_method = Math.floor(Math.random() * x) + y; //contoh object method
+
+      // 9. metode string
+      var nama = 'Fahmy Fauzi Alvianda';
+      var length = nama.length;
+      var indexof = nama.indexOf('u');
+      var lastindexof = nama.lastIndexOf('F');
+      var search = nama.search('n');
+      var charat = nama.charAt(4);
+      var touppercase = nama.toUpperCase();
+      var tolowercase = nama.toLowerCase();
+      var replace = nama.replace('Alvianda', 'coba ganti');
+
+      //   10. metode string 2
+      var substring = nama.substring(2, 10);
+      var substr = nama.substr(3, 10);
+
+      var angkastring = '120';
+      var angkastringfloat = '150.20';
+      var hasilint = parseInt(angkastring) + 10;
+      var hasilfloat = parseFloat(angkastringfloat) + 20.3;
+
+      // 11.  Fungsi
+      /*
+            //   menulis function
+            function printText() {
+              var x = 'Sekolah Koding';
+              alert('Halo selamat Datang!');
+              document.getElementById('wrap').innerHTML = x;
+            }
+            //   memanggil function
+            printText();
+
+            //   document.getElementById('wrap').innerHTML = hasilfloat;
+            */
+
+      //   12. Parameter
+      //   13. parameter lebih dari 1
+      /*
+            function printText(nama, angka) {
+              var text = nama + angka + ' yang baru';
+              document.getElementById('wrap').innerHTML = text;
+            }
+            var nama = 'Sekolah Koding';
+            printText(nama, '123');
+      */
+      // 14. return
+      /*
+            function penjumlahan(angka1, angka2) {
+              return angka1 + angka2;
+            }
+            var hasilpenjumlahan = penjumlahan(10, 20);
+            document.getElementById('wrap').innerHTML = hasilpenjumlahan;
+
+            */
+
+      //15. scope
+      //var global var local
+
+      //global
+      /*
+            var text = 'Halo ini adalah global';
+            function scope() {
+              // var textlocal = 'halo ini adalah variable local';
+              textlocaljadiglobal = 'Halo ini adalah text local jadi global';
+              // document.getElementById('wrap').innerHTML = textlocal;
+            }
+            scope();
+            document.getElementById('wrap').innerHTML = textlocaljadiglobal;
+            */
+
+      //16. Array
+      /*
+            var kotak = ['satu', 12, 'tiga'];
+            kotak[1] = 'dua';
+            var text = 'ini adalah angka ' + kotak[1];
+            */
+      //17. metode array
+      //18. metode array bagian 2
+
+      // var namaorang = ['Fahmy', 'andry', 'futry', 'rizky', 'anggara'];
+      // var namaorang2 = ['futra', 'Fuzi', 'diskha'];
+      // var namaorang3 = ['fauzi', 'alvianda'];
+      // // var total = namaorang2.sort();
+      // // var total = namaorang.reverse();
+      // // var total = namaorang.concat(namaorang2, namaorang3);
+      // // var total = namaorang.length;
+      // // var total = namaorang.join(' | ');
+
+      // // namaorang.splice(2, 1, 'dinda'); //splice(mulai , hapus , "isi");
+      // // var nama = namaorang.splice(2, 1, 'dinda'); //mengganti semua
+
+      // // namaorang.pop(); //hapus akhir
+      // // namaorang.push('Liya'); //tambah diakhir
+
+      // // namaorang.shift(); //hapus awal
+      // namaorang.unshift('ade'); //tambah awal
+      // document.getElementById('wrap').innerHTML = namaorang;
+
+      //19. tipe data boolean
+      // var x = true;
+      // var y = false;
+      // document.getElementById('wrap').innerHTML = x;
+
+      //20. if else
+      // 21. operator logika == != === !== < > >= <=
+      // 22. dua syarat atau lebih
+      //22. else if
+
+      // var programmer = 30000;
+      // var designer = 25000;
+      // var barang = 25000;
+      // if (programmer == barang) {
+      //   alert('uang programmer cukup!');
+      // } else if (designer == barang) {
+      //   alert('uang designer cukup');
+      // } else {
+      //   alert('Maaf uang anda kurang');
+      // }
+
+      //23. nested if
+      // if (programmer > barang) {
+      //   if (programmer > barang * 2) {
+      //     alert('programmer bisa beli 2 barang');
+      //   } else {
+      //     alert('programmer bisa beli 1 barang');
+      //   }
+      // }
+
+      //26. switch case
+
+      // var nama = 'Fahmy123';
+      // switch (nama) {
+      //   case 'Fauzi':
+      //     alert('namanya adalah Fauzi');
+      //     break;
+      //   case 'Alvianda':
+      //     alert('namanya adalah Alvianda');
+      //     break;
+      //   case 'Fahmy':
+      //     alert('namanya adalah Fahmy');
+      //     break;
+
+      //   default:
+      //     alert('Tidak ada yang sama');
+      // }
+
+      //27. for loop
+      // for (var i = 0; i < 6; i++) {
+      //   alert(i);
+      // }
+
+      //28. while loop
+
+      var i = 6;
+      var text = '';
+      // while (i < 5) {
+      //   // alert(i);
+      //   text += 'angkanya adalah ' + i + '<br>';
+      //   i++;
+      // }
+
+      // 29. do while
+      do {
+        // alert(i);
+        text += 'angkanya adalah ' + i + '<br>';
+        i++;
+      } while (i < 5);
+      document.getElementById('wrap').innerHTML = text;
+    </script>
+  </body>
+</html>
